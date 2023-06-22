@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box; /*used css to make login page look good*/
+  overflow: hidden;
+  user-select: none;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+.login {
+  background-color: #fff;
+}
+body {
+  background-color: #00acee;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border-radius: 10px;
+}
+input {
+  margin: 10px;
+  width: 300px;
+  border: none;
+}
+hr {
+  margin-top: -2px;
+}
+.forget-password {
+  margin-left: -178px;
+  color: rgb(171, 171, 171);
+  margin-top: -1px;
+  font-size: 14px;
+}
+button {
+  border: none;
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #00acee;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #059bd6;
+}
+.inner-div {
+  display: flex;
+}
+.notMember {
+  color: rgb(171, 171, 171);
+}
+.sign-up {
+  color: #00acee;
+  margin-left: 5px;
+}
+.login-btn {
+  cursor: pointer;
+  outline: none;
+}
+.sign-up,
+.forget-password {
+  cursor: pointer;
+}
+input {
+  outline: none;
+}
+#copyToClipboard {
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Url Shortner</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form id="form">
+        <div class="login">
+          <h1 style="text-align: center">Bitly Clone</h1>
+
+          <hr width="380px" color="lightgrey" />
+          <input
+            type="text"
+            placeholder="www.google.com"
+            name="originalUrl"
+            id="originalUrl"
+          />
+          <hr width="300px" color="lightgrey" />
+          <div>
+            <input type="text" name="" value="" id="displayUrlInput" /><i
+              class="fa-regular fa-clipboard"
+              id="copyToClipboard"
+            ></i>
+          </div>
+          <hr width="300px" color="lightgrey" />
+
+          <button class="login-btn" type="submit">Convert Url</button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/506a977239.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
