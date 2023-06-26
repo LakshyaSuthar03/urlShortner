@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qr generator</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form id="qrForm">
+        <div class="login">
+          <a href="/"><i class="fa-solid fa-arrow-left redirect"></i></a>
+          <h1 style="text-align: center">Bitly Clone</h1>
+
+          <hr width="380px" color="lightgrey" />
+          <label for="qrUrl">Enter Url</label>
+          <input
+            type="text"
+            placeholder="www.google.com"
+            name="qrUrl"
+            id="qrUrl"
+            required
+          />
+          <hr width="380px" color="lightgrey" />
+          <div id="generatedQrDisplay"></div>
+          <button class="login-btn" type="submit">Generate Qrcode</button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/506a977239.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../qrcode.js"></script>
+  </body>
+</html>

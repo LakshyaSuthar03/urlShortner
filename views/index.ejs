@@ -10,23 +10,42 @@
     <div class="main">
       <form id="form">
         <div class="login">
+          <a href="/qrcode"><i class="redirect">Go to Qr code generator</i></a>
           <h1 style="text-align: center">Bitly Clone</h1>
 
           <hr width="380px" color="lightgrey" />
+          <label for="originalUrl">Original Url</label>
           <input
             type="text"
             placeholder="www.google.com"
             name="originalUrl"
             id="originalUrl"
+            required
           />
-          <hr width="300px" color="lightgrey" />
+          <hr width="380px" color="lightgrey" />
+          <label for="alias">Alias(optional)</label>
+          <input
+            type="text"
+            placeholder="Eg: lakshya"
+            name="alias"
+            id="alias"
+          />
+          <span id="errorDialogBox"></span>
+
+          <hr width="380px" color="lightgrey" />
+          <label for="">shortned url</label>
           <div>
-            <input type="text" name="" value="" id="displayUrlInput" /><i
-              class="fa-regular fa-clipboard"
+            <input
+              type="text"
+              name="shortned url"
+              value=""
+              id="displayUrlInput"
+            /><i
+              class="fa-regular fa-clipboard redirect"
               id="copyToClipboard"
             ></i>
           </div>
-          <hr width="300px" color="lightgrey" />
+          <hr width="380px" color="lightgrey" />
 
           <button class="login-btn" type="submit">Convert Url</button>
         </div>
